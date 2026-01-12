@@ -1,8 +1,11 @@
-# Cozier Hijacker
-Another bit of a meme that hijacks a handle to a given process, using [ComfierSyscalls](https://github.com/blnchdev/ComfierSyscalls) which is my dynamic direct syscall wrapper; there is virtually no need to ever use direct syscalls in your own process to hijack handles, just thought it was funny to do.  
-Also, this uses std::optional, just because I like C++20  
-  
-This is for educational uses only, and in any ways this would virtually not cause any harm ever- hijacking a handle is either not possible or "detected" by EDRs and Kernel Mode Anti-Cheats
+# Wraith
+
+A handle hijacking implementation for a given process, using [Aether](https://github.com/blnchdev/Aether) as the dynamic direct syscall wrapper.  
+There's no practical need to use direct syscalls in your own process for handle hijacking, but it's an interesting exercise nonetheless.  
+This implementation uses std::optional because I think it's underappreciated!
+
+## Notes
+This is for educational purposes only. Handle hijacking is typically either blocked or detected by EDRs and kernel-mode anti-cheat solutions, so this technique has limited real-world applicability.
 
 ### Credits
 [NtDoc](https://ntdoc.m417z.com/) for NtAPI Definitions
