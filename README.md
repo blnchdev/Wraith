@@ -5,7 +5,7 @@ There's no practical need to use direct syscalls in your own process for handle 
 This implementation uses std::optional because I think it's underappreciated!
 
 ## Showcase
-![Example Implementation](https://www.blanche.dev/img/Wraith/Wraith1.png)
+![Example Implementation](https://i.imgur.com/SCjqDoe.png)
 
 ## Notes
 This is for educational purposes only. Handle hijacking is typically either blocked or detected by EDRs and kernel-mode anti-cheat solutions, so this technique has limited real-world applicability.
